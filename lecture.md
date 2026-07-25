@@ -18,7 +18,15 @@ translation:
     Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
 ---
 
-# Linear Algebra Foundations
+(linear-algebra)=
+
+```{raw} jupyter
+<div id="qe-notebook-header" style="text-align:right;">
+        <a href="https://quantecon.org/lectures/">Lectures</a>
+</div>
+```
+
+# {index}`Linear Algebra` Foundations
 
 ഈ lecture, quantitative economics-ന് അത്യന്താപേക്ഷിതമായ linear algebra-യിലെ അടിസ്ഥാന ആശയങ്ങൾ പരിചയപ്പെടുത്തുന്നു. നമ്മൾ vector spaces, matrices, അവയുടെ economic പ്രശ്നങ്ങളിലുള്ള applications എന്നിവ പരിശോധിക്കും.
 
@@ -130,7 +138,7 @@ Leontief inverse $(I - A)^{-1}$ പ്രത്യേകിച്ചും പ�
 
 ## Eigenvalues and Eigenvectors
 
-Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ പ്രധാന properties വെളിപ്പെടുത്തുന്നു. matrix $A$-യുടെ ഒരു eigenvector $v$ ഇത് satisfy ചെയ്യുന്നു:
+Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ stability analysis-ന് നിർണായകമായ പ്രധാന structural properties വെളിപ്പെടുത്തുന്നു. matrix $A$-യുടെ ഒരു eigenvector $v$ ഇത് satisfy ചെയ്യുന്നു:
 
 ```{math}
 :label: eigenvalue-equation
