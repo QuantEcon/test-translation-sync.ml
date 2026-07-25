@@ -11,6 +11,7 @@ translation:
   title: Introduction to Economics
   headings:
     Supply and Demand: Supply and Demand
+    Supply and Demand::Market Equilibrium: Market Equilibrium
     Economic Models: Economic Models
 ---
 
@@ -22,7 +23,9 @@ Economics-ന്റെ അടിസ്ഥാന തത്വങ്ങളില�
 
 economics-ലെ ഏറ്റവും അടിസ്ഥാനപരമായ concepts-ആണ് supply-യും demand-ഉം. വ്യത്യസ്ത prices-ൽ producers എത്ര അളവ് sell ചെയ്യാൻ തയ്യാറാണെന്ന് supply curve കാണിക്കുന്നു, അതേസമയം consumers എത്ര അളവ് വാങ്ങാൻ തയ്യാറാണെന്ന് demand curve കാണിക്കുന്നു.
 
-markets equilibrium-ൽ ആയിരിക്കുമ്പോൾ, supply ചെയ്യപ്പെടുന്ന quantity, demand ചെയ്യപ്പെടുന്ന quantity-ക്ക് തുല്യമായിരിക്കും. ഈ equilibrium price, buyers-ന്റെയും sellers-ന്റെയും താൽപ്പര്യങ്ങൾ സന്തുലിതമാക്കുന്നു.
+### Market Equilibrium
+
+supply, demand-ന് തുല്യമാകുമ്പോഴാണ് market equilibrium ഉണ്ടാകുന്നത്. ഈ നിർണായകമായ point-ൽ, producers എത്ര അളവ് sell ചെയ്യാൻ ആഗ്രഹിക്കുന്നുവോ, അത് consumers എത്ര അളവ് വാങ്ങാൻ ആഗ്രഹിക്കുന്നുവോ അതുമായി കൃത്യമായി match ആകുന്നു. ഈ equilibrium price, market forces സന്തുലിതമായ ഒരു stable state-നെ പ്രതിനിധീകരിക്കുന്നു, ഒപ്പം prices മാറാൻ അന്തർലീനമായ ഒരു pressure-ഉം ഇല്ല.
 
 ## Economic Models
 
