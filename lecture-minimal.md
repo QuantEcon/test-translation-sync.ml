@@ -20,9 +20,9 @@ Economics-ന്റെ അടിസ്ഥാന തത്വങ്ങളില�
 
 ## Supply and Demand
 
-economics-ലെ ഏറ്റവും അടിസ്ഥാനപരമായ concepts-ആണ് supply-യും demand-ഉം. വ്യത്യസ്ത prices-ൽ producers എത്ര അളവ് sell ചെയ്യാൻ തയ്യാറാണെന്ന് supply curve കാണിക്കുന്നു, അതേസമയം consumers എത്ര അളവ് വാങ്ങാൻ തയ്യാറാണെന്ന് demand curve കാണിക്കുന്നു.
+market analysis-ന്റെ അടിസ്ഥാനം രൂപപ്പെടുത്തുന്ന, economics-ലെ മൂലക്കല്ലായ concepts-ആണ് supply-യും demand-ഉം. വ്യത്യസ്ത price points-ൽ producers എത്ര അളവ് sell ചെയ്യാൻ തയ്യാറാണെന്ന് കാണിച്ചുകൊണ്ട്, producer behavior-നെ supply curve ചിത്രീകരിക്കുന്നു. മറിച്ച്, consumer behavior-നെയും purchasing decisions-നെയും demand curve പ്രതിനിധീകരിക്കുന്നു.
 
-markets equilibrium-ൽ ആയിരിക്കുമ്പോൾ, supply ചെയ്യപ്പെടുന്ന quantity, demand ചെയ്യപ്പെടുന്ന quantity-ക്ക് തുല്യമായിരിക്കും. ഈ equilibrium price, buyers-ന്റെയും sellers-ന്റെയും താൽപ്പര്യങ്ങൾ സന്തുലിതമാക്കുന്നു.
+supply curve-ഉം demand curve-ഉം കൂടിച്ചേരുന്ന ബിന്ദുവിലാണ് market equilibrium സംഭവിക്കുന്നത്. ഈ ബിന്ദുവിൽ, supply ചെയ്യപ്പെടുന്ന quantity, demand ചെയ്യപ്പെടുന്ന quantity-ക്ക് തുല്യമായിരിക്കും, കൂടാതെ market കാര്യക്ഷമമായി clear ചെയ്യപ്പെടുന്നു. ഈ equilibrium price, market-ന്റെ സ്വാഭാവിക balance-നെ പ്രതിനിധീകരിക്കുന്നു.
 
 ## Economic Models
 
