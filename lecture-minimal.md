@@ -12,6 +12,7 @@ translation:
   headings:
     Supply and Demand: Supply and Demand
     Economic Models: Economic Models
+    Market Equilibrium: Market Equilibrium
 ---
 
 # Introduction to Economics
@@ -29,3 +30,7 @@ markets equilibrium-ൽ ആയിരിക്കുമ്പോൾ, supply ച�
 economic processes-ന്റെ ലളിതമാക്കിയ പ്രതിനിധാനങ്ങളാണ് economic models. ഏറ്റവും പ്രധാനപ്പെട്ട relationships-ൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ചുകൊണ്ട് complex systems-നെ മനസ്സിലാക്കാൻ ഇവ economists-നെ സഹായിക്കുന്നു.
 
 reality-യെ ലളിതമാക്കാൻ models ചില assumptions ചെയ്യുന്നു. ഒരു model-ഉം perfect അല്ലെങ്കിലും, നല്ല models, economy എങ്ങനെ പ്രവർത്തിക്കുന്നു എന്നതിനെക്കുറിച്ച് വിലപ്പെട്ട insights നൽകുന്നു.
+
+## Market Equilibrium
+
+Market equilibrium എന്നത് supply, demand-ന് തുല്യമാകുന്ന അവസ്ഥയെ സൂചിപ്പിക്കുന്നു. ഈ ഘട്ടത്തിൽ price മാറാനുള്ള പ്രവണത ഉണ്ടാകില്ല, കാരണം market ഒരു സ്ഥിരമായ അവസ്ഥയിൽ എത്തിയിരിക്കുന്നു. Market dynamics analysis ചെയ്യുന്നതിന് equilibrium മനസ്സിലാക്കുന്നത് വളരെ പ്രധാനമാണ്.
