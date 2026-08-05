@@ -16,7 +16,7 @@ translation:
 
 # Introduction to Economics
 
-Economics-ന്റെ അടിസ്ഥാന തത്വങ്ങളിലേക്കുള്ള ഒരു പ്രാഥമിക ആമുഖമാണ് ഈ document നൽകുന്നത്. economic analysis-ന്റെ അടിത്തറ രൂപപ്പെടുത്തുന്ന അടിസ്ഥാന concepts-കൾ നമ്മൾ ഇവിടെ പരിശോധിക്കും.
+Economics-ന്റെ അടിസ്ഥാന തത്വങ്ങളിലേക്കുള്ള updated content-ഉം examples-ഉം ഉള്ള ഒരു comprehensive ആമുഖമാണ് ഈ document നൽകുന്നത്. modern economic analysis-ന്റെ അടിത്തറ രൂപപ്പെടുത്തുന്ന അടിസ്ഥാന concepts-കൾ നമ്മൾ ഇവിടെ പരിശോധിക്കും.
 
 ## Supply and Demand
 
