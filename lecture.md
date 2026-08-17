@@ -20,11 +20,11 @@ translation:
 
 # Linear Algebra Foundations
 
-ഈ lecture, quantitative economics-ന് അത്യന്താപേക്ഷിതമായ linear algebra-യിലെ അടിസ്ഥാന ആശയങ്ങൾ പരിചയപ്പെടുത്തുന്നു. നമ്മൾ vector spaces, matrices, അവയുടെ economic പ്രശ്നങ്ങളിലുള്ള applications എന്നിവ പരിശോധിക്കും.
+ഈ lecture, quantitative economics-ന് അത്യന്താപേക്ഷിതമായ linear algebra-യിലെ അടിസ്ഥാന ആശയങ്ങൾ പരിചയപ്പെടുത്തുന്നു. നമ്മൾ vector spaces, matrices, അവയുടെ economic പ്രശ്നങ്ങളിലുള്ള applications എന്നിവ recent research-ൽ നിന്നുമുള്ള updated examples-ുമായി പരിശോധിക്കും.
 
 ## Vector Spaces
 
-vector space എന്നത് vectors എന്ന് വിളിക്കപ്പെടുന്ന objects-ന്റെ ഒരു collection ആണ്, ഇവ പരസ്പരം add ചെയ്യാനും scalars കൊണ്ട് multiply ചെയ്യാനും കഴിയും. modern economic analysis-ന് vector spaces മനസ്സിലാക്കുന്നത് അത്യന്താപേക്ഷിതമാണ്.
+vector space എന്നത് vectors എന്ന് വിളിക്കപ്പെടുന്ന objects-ന്റെ ഒരു collection ആണ്, ഇവ പരസ്പരം add ചെയ്യാനും scalars കൊണ്ട് multiply ചെയ്യാനും കഴിയും. modern economic analysis-ന്, പ്രത്യേകിച്ച് general equilibrium theory-ൽ, vector spaces മനസ്സിലാക്കുന്നത് അത്യന്താപേക്ഷിതമാണ്.
 
 Mathematically, ഒരു vector $\mathbf{v} \in \mathbb{R}^n$ ഇങ്ങനെ represent ചെയ്യാം:
 
@@ -62,8 +62,9 @@ vector spaces നിരവധി പ്രധാന properties satisfy ചെയ
 - addition, scalar multiplication എന്നിവയ്ക്ക് കീഴിലുള്ള closure
 - additive identity-യുടെ (zero vector) നിലനിൽപ്പ്
 - additive inverses-ന്റെ നിലനിൽപ്പ്
+- addition-ന്റെ associativity, commutativity
 
-ഈ properties, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു.
+ഈ properties, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു, ഇത് economic choice sets represent ചെയ്യാൻ ഇവയെ അനുയോജ്യമാക്കുന്നു.
 
 #### Applications in Economics
 
@@ -77,7 +78,7 @@ economic modeling-ൽ vector space properties അടിസ്ഥാനപരമ�
 
 ## Matrix Operations
 
-Matrices എന്നത് linear transformations represent ചെയ്യുന്ന numbers-ന്റെ rectangular arrays ആണ്. economic modeling, data analysis എന്നിവയിൽ ഇവ അടിസ്ഥാന tools ആണ്.
+Matrices എന്നത് linear transformations represent ചെയ്യുന്ന numbers-ന്റെ rectangular arrays ആണ്. economic modeling, data analysis എന്നിവയിൽ ഇവ അടിസ്ഥാന tools ആണ്, input-output tables മുതൽ portfolio theory-യിലെ covariance matrices വരെ.
 
 ഒരു general $m \times n$ matrix-ന്റെ രൂപം ഇങ്ങനെയാണ്:
 
@@ -90,7 +91,7 @@ a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{bmatrix}
 $$
 
-Matrix multiplication, linear transformations compose ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു. matrices $A$, $B$ എന്നിവയ്ക്ക്, product $AB$, transformation $B$ apply ചെയ്തതിന് ശേഷം transformation $A$ apply ചെയ്യുന്നതിനെ represent ചെയ്യുന്നു.
+Matrix multiplication, linear transformations efficiently ആയി compose ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു. matrices $A$, $B$ എന്നിവയ്ക്ക്, product $AB$, transformation $B$ apply ചെയ്തതിന് ശേഷം transformation $A$ apply ചെയ്യുന്നതിനെ represent ചെയ്യുന്നു. multi-stage economic processes analyze ചെയ്യുന്നതിന് ഈ composition property അത്യന്താപേക്ഷിതമാണ്.
 
 നമുക്ക് ഒരു economic application ഉപയോഗിച്ച് matrix operations demonstrate ചെയ്യാം:
 
@@ -121,16 +122,17 @@ print(np.round(total_output, 2))
 
 ### Applications in Economics
 
-economic models പലപ്പോഴും matrices ഉപയോഗിക്കുന്നത് ഇവ represent ചെയ്യാനാണ്:
-- production-ലെ input-output relationships
-- Markov chains-ലെ transition probabilities
-- linear equation systems-ലെ coefficient matrices
+economic models വ്യാപകമായി matrices ഉപയോഗിക്കുന്നത് ഇവ represent ചെയ്യാനാണ്:
+- production-ലെ input-output relationships (Leontief systems)
+- Markov chains-ലെ transition probabilities (dynamic programming)
+- linear equation systems-ലെ coefficient matrices (CGE models)
+- econometric models-ലെ covariance structures
 
 Leontief inverse $(I - A)^{-1}$ പ്രത്യേകിച്ചും പ്രധാനമാണ്, ഇവിടെ $I$ identity matrix ആണ്, $A$ input-output coefficient matrix ആണ്.
 
 ## Eigenvalues and Eigenvectors
 
-Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ പ്രധാന properties വെളിപ്പെടുത്തുന്നു. matrix $A$-യുടെ ഒരു eigenvector $v$ ഇത് satisfy ചെയ്യുന്നു:
+Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെയും dynamic systems-ന്റെയും പ്രധാന properties വെളിപ്പെടുത്തുന്നു. matrix $A$-യുടെ ഒരു eigenvector $v$ ഇത് satisfy ചെയ്യുന്നു:
 
 ```{math}
 :label: eigenvalue-equation
@@ -175,7 +177,13 @@ print(f"Employed: {steady_state[0]:.2%}")
 print(f"Unemployed: {steady_state[1]:.2%}")
 ```
 
-growth models, stability analysis പോലുള്ള dynamic economic systems analyze ചെയ്യാൻ ഈ concepts അത്യന്താപേക്ഷിതമാണ്.
+താഴെ പറയുന്നവ analyze ചെയ്യാൻ ഈ concepts അത്യന്താപേക്ഷിതമാണ്:
+- dynamic economic systems-ന്റെ stability
+- Markov processes-ന്റെ long-run behavior
+- empirical work-ലെ principal component analysis
+- dynamic models-ലെ optimal growth paths
+
+പല economic models-ലും dominant eigenvalue ആണ് long-run growth rate നിർണയിക്കുന്നത്.
 
 dominant eigenvalue കണ്ടെത്താൻ power iteration method ഉപയോഗിക്കാം:
 
