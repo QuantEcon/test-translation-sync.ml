@@ -1,0 +1,6 @@
+source-language: en
+target-language: ml
+docs-folder: .
+editors:
+  primary: mmcky
+  secondary: []
