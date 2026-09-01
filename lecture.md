@@ -14,17 +14,16 @@ translation:
     Vector Spaces::Basic Properties: Basic Properties
     Vector Spaces::Basic Properties::Applications in Economics: Applications in Economics
     Matrix Operations: Matrix Operations
-    Matrix Operations::Applications in Economics: Applications in Economics
-    Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
+    Matrix Operations::Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
 ---
 
 # Linear Algebra Foundations
 
-ഈ lecture, quantitative economics-ന് അത്യന്താപേക്ഷിതമായ linear algebra-യിലെ അടിസ്ഥാന ആശയങ്ങൾ പരിചയപ്പെടുത്തുന്നു. നമ്മൾ vector spaces, matrices, അവയുടെ economic പ്രശ്നങ്ങളിലുള്ള applications എന്നിവ പരിശോധിക്കും.
+ഈ lecture, quantitative economics-ഉം data science-ഉം അത്യന്താപേക്ഷിതമായ linear algebra-യിലെ അടിസ്ഥാന ആശയങ്ങൾ പരിചയപ്പെടുത്തുന്നു. നമുക്ക് vector spaces, matrices, eigenvalues, അവയുടെ economic പ്രശ്നങ്ങളിലുള്ള applications എന്നിവ പരിശോധിക്കാം.
 
 ## Vector Spaces
 
-vector space എന്നത് vectors എന്ന് വിളിക്കപ്പെടുന്ന objects-ന്റെ ഒരു collection ആണ്, ഇവ പരസ്പരം add ചെയ്യാനും scalars കൊണ്ട് multiply ചെയ്യാനും കഴിയും. modern economic analysis-ന് vector spaces മനസ്സിലാക്കുന്നത് അത്യന്താപേക്ഷിതമാണ്.
+vector space എന്നത് vectors എന്ന് വിളിക്കപ്പെടുന്ന objects-ന്റെ ഒരു collection ആണ്, ഇവ പരസ്പരം add ചെയ്യാനും scalars കൊണ്ട് multiply ചെയ്യാനും കഴിയും. modern economic analysis-നും machine learning applications-നും vector spaces മനസ്സിലാക്കുന്നത് അത്യന്താപേക്ഷിതമാണ്.
 
 Mathematically, ഒരു vector $\mathbf{v} \in \mathbb{R}^n$ ഇങ്ങനെ represent ചെയ്യാം:
 
@@ -62,8 +61,9 @@ vector spaces നിരവധി പ്രധാന properties satisfy ചെയ
 - addition, scalar multiplication എന്നിവയ്ക്ക് കീഴിലുള്ള closure
 - additive identity-യുടെ (zero vector) നിലനിൽപ്പ്
 - additive inverses-ന്റെ നിലനിൽപ്പ്
+- addition-ന്റെ associativity-ഉം commutativity-ഉം
 
-ഈ properties, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു.
+ഈ properties, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു, ഇത് linear transformations-ന്റെ അടിസ്ഥാനമായി മാറുന്നു.
 
 #### Applications in Economics
 
@@ -77,7 +77,7 @@ economic modeling-ൽ vector space properties അടിസ്ഥാനപരമ�
 
 ## Matrix Operations
 
-Matrices എന്നത് linear transformations represent ചെയ്യുന്ന numbers-ന്റെ rectangular arrays ആണ്. economic modeling, data analysis എന്നിവയിൽ ഇവ അടിസ്ഥാന tools ആണ്.
+Matrices എന്നത് linear transformations represent ചെയ്യുന്ന numbers-ന്റെ rectangular arrays ആണ്. economic modeling, data analysis, optimization problems എന്നിവയിൽ ഇവ അടിസ്ഥാന tools ആണ്.
 
 ഒരു general $m \times n$ matrix-ന്റെ രൂപം ഇങ്ങനെയാണ്:
 
@@ -90,95 +90,12 @@ a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{bmatrix}
 $$
 
-Matrix multiplication, linear transformations compose ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു. matrices $A$, $B$ എന്നിവയ്ക്ക്, product $AB$, transformation $B$ apply ചെയ്തതിന് ശേഷം transformation $A$ apply ചെയ്യുന്നതിനെ represent ചെയ്യുന്നു.
+### Eigenvalues and Eigenvectors
 
-നമുക്ക് ഒരു economic application ഉപയോഗിച്ച് matrix operations demonstrate ചെയ്യാം:
-
-```{code-cell} python
-# 3-sector economy-ക്ക് വേണ്ടി ഒരു simple input-output matrix സൃഷ്ടിക്കുക
-# Sectors: Agriculture, Manufacturing, Services
-input_output = np.array([
-    [0.2, 0.3, 0.1],  # Agriculture inputs
-    [0.3, 0.2, 0.2],  # Manufacturing inputs
-    [0.1, 0.2, 0.3]   # Services inputs
-])
-
-# Final demand vector (billions-ൽ)
-final_demand = np.array([100, 150, 200])
-
-# Leontief inverse ഉപയോഗിച്ച് total output കണക്കാക്കുക: x = (I - A)^{-1} * d
-I = np.eye(3)
-leontief_inverse = np.linalg.inv(I - input_output)
-total_output = leontief_inverse @ final_demand
-
-print("Input-Output Matrix:")
-print(input_output)
-print("\nLeontief Inverse:")
-print(np.round(leontief_inverse, 3))
-print("\nആവശ്യമായ Total Output (billions):")
-print(np.round(total_output, 2))
-```
-
-### Applications in Economics
-
-economic models പലപ്പോഴും matrices ഉപയോഗിക്കുന്നത് ഇവ represent ചെയ്യാനാണ്:
-- production-ലെ input-output relationships
-- Markov chains-ലെ transition probabilities
-- linear equation systems-ലെ coefficient matrices
-
-Leontief inverse $(I - A)^{-1}$ പ്രത്യേകിച്ചും പ്രധാനമാണ്, ഇവിടെ $I$ identity matrix ആണ്, $A$ input-output coefficient matrix ആണ്.
-
-## Eigenvalues and Eigenvectors
-
-Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ പ്രധാന properties വെളിപ്പെടുത്തുന്നു. matrix $A$-യുടെ ഒരു eigenvector $v$ ഇത് satisfy ചെയ്യുന്നു:
-
-```{math}
-:label: eigenvalue-equation
-Av = \lambda v
-```
-
-ഇവിടെ $\lambda$ എന്നത് eigenvalue ആണ്. growth theory മുതൽ stability analysis വരെ, economics-ൽ ഉടനീളം ഈ fundamental equation കാണപ്പെടുന്നു.
-
-ഒരു $n \times n$ matrix $A$-ക്ക്, characteristic polynomial ഇതാണ്:
+Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ പ്രധാന structural properties വെളിപ്പെടുത്തുന്നു. ഒരു square matrix $A$-ക്ക്, ഒരു eigenvector $\mathbf{v}$-ഉം അതിന് അനുയോജ്യമായ eigenvalue $\lambda$-ഉം ഇത് satisfy ചെയ്യുന്നു:
 
 $$
-\det(A - \lambda I) = 0
+A\mathbf{v} = \lambda \mathbf{v}
 $$
 
-ഈ equation പരിഹരിക്കുന്നത് eigenvalues നൽകുന്നു. നമുക്ക് ഒരു transition matrix-ന്റെ eigenvalues കണക്കാക്കാം:
-
-```{code-cell} python
-# ഒരു simple Markov chain-ന് വേണ്ടി ഒരു transition matrix സൃഷ്ടിക്കുക
-# States: Employed, Unemployed
-transition_matrix = np.array([
-    [0.95, 0.05],  # Employed -> (Employed, Unemployed)
-    [0.20, 0.80]   # Unemployed -> (Employed, Unemployed)
-])
-
-# Eigenvalues, eigenvectors കണക്കാക്കുക
-eigenvalues, eigenvectors = np.linalg.eig(transition_matrix)
-
-print("Transition Matrix:")
-print(transition_matrix)
-print("\nEigenvalues:")
-print(np.round(eigenvalues, 4))
-print("\nEigenvectors:")
-print(np.round(eigenvectors, 4))
-
-# eigenvalue 1-നോട് അനുയോജ്യമായ eigenvector, steady-state distribution നൽകുന്നു
-steady_state_index = np.argmax(eigenvalues)
-steady_state = eigenvectors[:, steady_state_index]
-steady_state = steady_state / steady_state.sum()  # Normalize ചെയ്യുക
-
-print("\nSteady-State Distribution:")
-print(f"Employed: {steady_state[0]:.2%}")
-print(f"Unemployed: {steady_state[1]:.2%}")
-```
-
-growth models, stability analysis പോലുള്ള dynamic economic systems analyze ചെയ്യാൻ ഈ concepts അത്യന്താപേക്ഷിതമാണ്.
-
-dominant eigenvalue കണ്ടെത്താൻ power iteration method ഉപയോഗിക്കാം:
-
-$$
-\lambda_1 = \lim_{k \to \infty} \frac{\|A^k \mathbf{v}_0\|}{\|A^{k-1} \mathbf{v}_0\|}
-$$
+dynamic systems, stability analysis, PCA പോലുള്ള dimensionality reduction techniques എന്നിവ മനസ്സിലാക്കുന്നതിന് ഈ concepts വളരെ പ്രധാനമാണ്.
