@@ -58,12 +58,14 @@ plt.show()
 
 ### Basic Properties
 
-vector spaces നിരവധി പ്രധാന properties satisfy ചെയ്യുന്നു:
+vector spaces-ന്റെ algebraic structure define ചെയ്യുന്ന നിരവധി fundamental axioms ഇവ satisfy ചെയ്യുന്നു:
 - addition, scalar multiplication എന്നിവയ്ക്ക് കീഴിലുള്ള closure
 - additive identity-യുടെ (zero vector) നിലനിൽപ്പ്
 - additive inverses-ന്റെ നിലനിൽപ്പ്
+- addition-ന്റെ associativity, commutativity
+- addition-നെയും scalar multiplication-നെയും ബന്ധിപ്പിക്കുന്ന distributive properties
 
-ഈ properties, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു.
+ഈ axioms, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു, ഇത് optimization problems-ലെ economic choice sets-നെയും constraint sets-നെയും represent ചെയ്യാൻ അവയെ ideal ആക്കുന്നു.
 
 #### Applications in Economics
 
