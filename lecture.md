@@ -8,177 +8,175 @@ kernelspec:
   language: python
   name: python3
 translation:
-  title: Linear Algebra Foundations
+  title: Hierarchical Economic Systems
   headings:
-    Vector Spaces: Vector Spaces
-    Vector Spaces::Basic Properties: Basic Properties
-    Vector Spaces::Basic Properties::Applications in Economics: Applications in Economics
-    Matrix Operations: Matrix Operations
-    Matrix Operations::Applications in Economics: Applications in Economics
-    Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
+    International Trade: International Trade
+    International Trade::Regional Trade Agreements: Regional Trade Agreements
+    International Trade::Regional Trade Agreements::Implementation Mechanisms: Implementation Mechanisms
+    International Trade::Regional Trade Agreements::Implementation Mechanisms::Dispute Resolution Procedures: Dispute Resolution Procedures
+    International Trade::Regional Trade Agreements::Implementation Mechanisms::Dispute Resolution Procedures::Arbitration Panels: Arbitration Panels
+    International Trade::Regional Trade Agreements::Implementation Mechanisms::Dispute Resolution Procedures::Appeals Process: Appeals Process
+    International Trade::Regional Trade Agreements::Implementation Mechanisms::Enforcement Mechanisms: Enforcement Mechanisms
+    International Trade::Regional Trade Agreements::Harmonization Standards: Harmonization Standards
+    International Trade::Regional Trade Agreements::Harmonization Standards::Product Safety Regulations: Product Safety Regulations
+    International Trade::Regional Trade Agreements::Harmonization Standards::Environmental Standards: Environmental Standards
+    International Trade::Bilateral Trade Relationships: Bilateral Trade Relationships
+    Monetary Policy Hierarchy: Monetary Policy Hierarchy
+    Monetary Policy Hierarchy::Policy Committee Structure: Policy Committee Structure
+    Monetary Policy Hierarchy::Policy Committee Structure::Voting Procedures: Voting Procedures
+    Monetary Policy Hierarchy::Policy Committee Structure::Voting Procedures::Dissenting Opinions: Dissenting Opinions
+    Monetary Policy Hierarchy::Policy Committee Structure::Voting Procedures::Consensus Building: Consensus Building
+    Monetary Policy Hierarchy::Policy Committee Structure::Information Flow: Information Flow
+    Monetary Policy Hierarchy::Implementation Channels: Implementation Channels
+    Monetary Policy Hierarchy::Implementation Channels::Open Market Operations: Open Market Operations
+    Monetary Policy Hierarchy::Implementation Channels::Open Market Operations::Primary Dealers: Primary Dealers
+    Monetary Policy Hierarchy::Implementation Channels::Open Market Operations::Primary Dealers::Auction Mechanisms: Auction Mechanisms
+    Monetary Policy Hierarchy::Implementation Channels::Open Market Operations::Primary Dealers::Settlement Procedures: Settlement Procedures
+    Monetary Policy Hierarchy::Implementation Channels::Open Market Operations::Reserve Requirements: Reserve Requirements
+    Fiscal Policy Coordination: Fiscal Policy Coordination
+    Fiscal Policy Coordination::National Budget Process: National Budget Process
+    Fiscal Policy Coordination::National Budget Process::Revenue Collection: Revenue Collection
+    Fiscal Policy Coordination::National Budget Process::Revenue Collection::Income Tax Administration: Income Tax Administration
+    Fiscal Policy Coordination::National Budget Process::Revenue Collection::Income Tax Administration::Audit Selection Criteria: Audit Selection Criteria
+    Fiscal Policy Coordination::National Budget Process::Revenue Collection::Income Tax Administration::Penalty Structures: Penalty Structures
+    Fiscal Policy Coordination::National Budget Process::Revenue Collection::Corporate Tax Compliance: Corporate Tax Compliance
+    Fiscal Policy Coordination::National Budget Process::Expenditure Allocation: Expenditure Allocation
+    Fiscal Policy Coordination::Intergovernmental Transfers: Intergovernmental Transfers
+    Summary: Summary
 ---
 
-# Linear Algebra Foundations
+# Hierarchical Economic Systems
 
-ഈ lecture, quantitative economics-ന് അത്യന്താപേക്ഷിതമായ linear algebra-യിലെ അടിസ്ഥാന ആശയങ്ങൾ പരിചയപ്പെടുത്തുന്നു. നമ്മൾ vector spaces, matrices, അവയുടെ economic പ്രശ്നങ്ങളിലുള്ള applications എന്നിവ പരിശോധിക്കും.
+ഈ lecture, economic systems-ലെ hierarchical structures പരിശോധിക്കുന്നു, കൂടാതെ ആഴത്തിലുള്ള organizational, analytical frameworks-നെ വിശദീകരിക്കുന്നു.
 
-## Vector Spaces
+## International Trade
 
-vector space എന്നത് vectors എന്ന് വിളിക്കപ്പെടുന്ന objects-ന്റെ ഒരു collection ആണ്, ഇവ പരസ്പരം add ചെയ്യാനും scalars കൊണ്ട് multiply ചെയ്യാനും കഴിയും. modern economic analysis-ന് vector spaces മനസ്സിലാക്കുന്നത് അത്യന്താപേക്ഷിതമാണ്.
+Individual firms മുതൽ national governments-ഉം international organizations-ഉം വരെ, പല തലങ്ങളിലുള്ള decision-making International trade-ൽ ഉൾപ്പെടുന്നു.
 
-Mathematically, ഒരു vector $\mathbf{v} \in \mathbb{R}^n$ ഇങ്ങനെ represent ചെയ്യാം:
+### Regional Trade Agreements
 
-$$
-\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}
-$$
+NAFTA, EU എന്നിവയെപ്പോലുള്ള regional trade agreements complex ആയ multi-level governance structures create ചെയ്യുന്നു.
 
-നമുക്ക് Python-ൽ ചില vectors സൃഷ്ടിച്ച് visualize ചെയ്യാം:
+#### Implementation Mechanisms
 
-```{code-cell} python
-import numpy as np
-import matplotlib.pyplot as plt
+Compliance ഉറപ്പാക്കാനും disputes പരിഹരിക്കാനും ഓരോ trade agreement-ഇനും പ്രത്യേക implementation mechanisms ആവശ്യമായിവരുന്നു.
 
-# രണ്ട് vectors സൃഷ്ടിക്കുക
-v1 = np.array([2, 3])
-v2 = np.array([1, 4])
+##### Dispute Resolution Procedures
 
-# Vectors visualize ചെയ്യുക
-fig, ax = plt.subplots(figsize=(8, 6))
-ax.quiver(0, 0, v1[0], v1[1], angles='xy', scale_units='xy', scale=1, color='blue', label='v1')
-ax.quiver(0, 0, v2[0], v2[1], angles='xy', scale_units='xy', scale=1, color='red', label='v2')
-ax.set_xlim(-1, 5)
-ax.set_ylim(-1, 5)
-ax.set_xlabel('x-axis')
-ax.set_ylabel('y-axis')
-ax.set_title('2D Space-ലെ Vector Representation')
-ax.legend()
-ax.grid(True)
-plt.show()
-```
+Member nations-ുകൾക്കിടയിലുള്ള trade disputes പരിഹരിക്കാൻ formal procedures നിലവിലുണ്ട്.
 
-### Basic Properties
+###### Arbitration Panels
 
-vector spaces നിരവധി പ്രധാന properties satisfy ചെയ്യുന്നു:
-- addition, scalar multiplication എന്നിവയ്ക്ക് കീഴിലുള്ള closure
-- additive identity-യുടെ (zero vector) നിലനിൽപ്പ്
-- additive inverses-ന്റെ നിലനിൽപ്പ്
+Trade law experts അടങ്ങിയതാണ് Arbitration panels. ഇവർ claims evaluate ചെയ്ത് trade violations-ന് binding ആയ rulings നൽകുന്നു.
 
-ഈ properties, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു.
+###### Appeals Process
 
-#### Applications in Economics
+Initial rulings-നെ challenge ചെയ്യാൻ parties-നെ അനുവദിക്കുന്നതാണ് appeals process. ഇത് dispute resolution-ൽ fairness ഉറപ്പാക്കുന്നു.
 
-economic modeling-ൽ vector space properties അടിസ്ഥാനപരമാണ്. closure property, feasible allocations-ന്റെ combinations feasible ആയി തുടരുന്നു എന്ന് ഉറപ്പാക്കുന്നു, inverses-ന്റെ നിലനിൽപ്പ് debts, obligations എന്നിവ model ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു.
+##### Enforcement Mechanisms
 
-രണ്ട് vectors $\mathbf{u}$, $\mathbf{v}$ എന്നിവയുടെ sum component-wise ആയി define ചെയ്യുന്നു:
+Agreements-ുമായുള്ള compliance ഉറപ്പാക്കാൻ trade sanctions-ഉം tariff adjustments-ഉം enforcement mechanisms-ൽ ഉൾപ്പെടുന്നു.
 
-```{math}
-\mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n \end{bmatrix}
-```
+#### Harmonization Standards
 
-## Matrix Operations
+Seamless trade-ന് സഹായിക്കാൻ countries-ുകൾക്കിടയിൽ standards harmonize ചെയ്യേണ്ടതുണ്ട്.
 
-Matrices എന്നത് linear transformations represent ചെയ്യുന്ന numbers-ന്റെ rectangular arrays ആണ്. economic modeling, data analysis എന്നിവയിൽ ഇവ അടിസ്ഥാന tools ആണ്.
+##### Product Safety Regulations
 
-ഒരു general $m \times n$ matrix-ന്റെ രൂപം ഇങ്ങനെയാണ്:
+എല്ലാ member nations-ുകളിലും goods minimum quality-ഉം safety requirements-ഉം പാലിക്കുന്നുണ്ടെന്ന് product safety regulations ഉറപ്പാക്കുന്നു.
 
-$$
-A = \begin{bmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \\
-a_{21} & a_{22} & \cdots & a_{2n} \\
-\vdots & \vdots & \ddots & \vdots \\
-a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{bmatrix}
-$$
+##### Environmental Standards
 
-Matrix multiplication, linear transformations compose ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു. matrices $A$, $B$ എന്നിവയ്ക്ക്, product $AB$, transformation $B$ apply ചെയ്തതിന് ശേഷം transformation $A$ apply ചെയ്യുന്നതിനെ represent ചെയ്യുന്നു.
+Business ആകർഷിക്കാനായി countries environmental protections കുറയ്ക്കുന്ന ഒരു "race to the bottom" സാഹചര്യം environmental standards തടയുന്നു.
 
-നമുക്ക് ഒരു economic application ഉപയോഗിച്ച് matrix operations demonstrate ചെയ്യാം:
+### Bilateral Trade Relationships
 
-```{code-cell} python
-# 3-sector economy-ക്ക് വേണ്ടി ഒരു simple input-output matrix സൃഷ്ടിക്കുക
-# Sectors: Agriculture, Manufacturing, Services
-input_output = np.array([
-    [0.2, 0.3, 0.1],  # Agriculture inputs
-    [0.3, 0.2, 0.2],  # Manufacturing inputs
-    [0.1, 0.2, 0.3]   # Services inputs
-])
+രാജ്യങ്ങളുടെ ജോഡികൾക്കിടയിലുള്ള bilateral relationships-ന് പലപ്പോഴും അവയുടേതായ സവിശേഷതകളും agreements-ഉം ഉണ്ടാകും.
 
-# Final demand vector (billions-ൽ)
-final_demand = np.array([100, 150, 200])
+## Monetary Policy Hierarchy
 
-# Leontief inverse ഉപയോഗിച്ച് total output കണക്കാക്കുക: x = (I - A)^{-1} * d
-I = np.eye(3)
-leontief_inverse = np.linalg.inv(I - input_output)
-total_output = leontief_inverse @ final_demand
+Central banks, decision-making-ന്റെയും policy implementation-ന്റെയും ഒരു hierarchical framework-ന് ഉള്ളിലാണ് പ്രവർത്തിക്കുന്നത്.
 
-print("Input-Output Matrix:")
-print(input_output)
-print("\nLeontief Inverse:")
-print(np.round(leontief_inverse, 3))
-print("\nആവശ്യമായ Total Output (billions):")
-print(np.round(total_output, 2))
-```
+### Policy Committee Structure
 
-### Applications in Economics
+Interest rates-ഉം മറ്റ് monetary policy tools-ഉം set ചെയ്യാൻ policy committees പതിവായി meet ചെയ്യുന്നു.
 
-economic models പലപ്പോഴും matrices ഉപയോഗിക്കുന്നത് ഇവ represent ചെയ്യാനാണ്:
-- production-ലെ input-output relationships
-- Markov chains-ലെ transition probabilities
-- linear equation systems-ലെ coefficient matrices
+#### Voting Procedures
 
-Leontief inverse $(I - A)^{-1}$ പ്രത്യേകിച്ചും പ്രധാനമാണ്, ഇവിടെ $I$ identity matrix ആണ്, $A$ input-output coefficient matrix ആണ്.
+Committee members policy changes-ൽ vote ചെയ്യുന്നു, ചില systems-ൽ വ്യത്യസ്ത voting weights ഉണ്ടായിരിക്കും.
 
-## Eigenvalues and Eigenvectors
+##### Dissenting Opinions
 
-Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ പ്രധാന properties വെളിപ്പെടുത്തുന്നു. matrix $A$-യുടെ ഒരു eigenvector $v$ ഇത് satisfy ചെയ്യുന്നു:
+Majority decision-യോട് വിയോജിക്കുമ്പോൾ members dissenting opinions ഫയൽ ചെയ്യാറുണ്ട്, ഇത് policy debates-നെക്കുറിച്ചുള്ള വിലപ്പെട്ട insights നൽകുന്നു.
 
-```{math}
-:label: eigenvalue-equation
-Av = \lambda v
-```
+##### Consensus Building
 
-ഇവിടെ $\lambda$ എന്നത് eigenvalue ആണ്. growth theory മുതൽ stability analysis വരെ, economics-ൽ ഉടനീളം ഈ fundamental equation കാണപ്പെടുന്നു.
+Formal votes-ന് മുമ്പ് views align ചെയ്യാൻ consensus-building processes സഹായിക്കുന്നു, ഇത് markets-ലെ uncertainty കുറയ്ക്കുന്നു.
 
-ഒരു $n \times n$ matrix $A$-ക്ക്, characteristic polynomial ഇതാണ്:
+#### Information Flow
 
-$$
-\det(A - \lambda I) = 0
-$$
+Regional branches-ൽ നിന്നും central policy committee-ലേക്ക് information ഒഴുകുന്നു, ഇത് informed decision-making സാധ്യമാക്കുന്നു.
 
-ഈ equation പരിഹരിക്കുന്നത് eigenvalues നൽകുന്നു. നമുക്ക് ഒരു transition matrix-ന്റെ eigenvalues കണക്കാക്കാം:
+### Implementation Channels
 
-```{code-cell} python
-# ഒരു simple Markov chain-ന് വേണ്ടി ഒരു transition matrix സൃഷ്ടിക്കുക
-# States: Employed, Unemployed
-transition_matrix = np.array([
-    [0.95, 0.05],  # Employed -> (Employed, Unemployed)
-    [0.20, 0.80]   # Unemployed -> (Employed, Unemployed)
-])
+Policy decisions എടുത്തുകഴിഞ്ഞാൽ, implementation പല channels-ഇലൂടെയും നടക്കുന്നു.
 
-# Eigenvalues, eigenvectors കണക്കാക്കുക
-eigenvalues, eigenvectors = np.linalg.eig(transition_matrix)
+#### Open Market Operations
 
-print("Transition Matrix:")
-print(transition_matrix)
-print("\nEigenvalues:")
-print(np.round(eigenvalues, 4))
-print("\nEigenvectors:")
-print(np.round(eigenvectors, 4))
+Money supply-യെ സ്വാധീനിക്കാൻ government securities-നെ buy ചെയ്യുന്നതും sell ചെയ്യുന്നതും open market operations-ൽ ഉൾപ്പെടുന്നു.
 
-# eigenvalue 1-നോട് അനുയോജ്യമായ eigenvector, steady-state distribution നൽകുന്നു
-steady_state_index = np.argmax(eigenvalues)
-steady_state = eigenvectors[:, steady_state_index]
-steady_state = steady_state / steady_state.sum()  # Normalize ചെയ്യുക
+##### Primary Dealers
 
-print("\nSteady-State Distribution:")
-print(f"Employed: {steady_state[0]:.2%}")
-print(f"Unemployed: {steady_state[1]:.2%}")
-```
+Central bank-നും broader financial markets-ഉം തമ്മിലുള്ള intermediaries ആയി primary dealers പ്രവർത്തിക്കുന്നു.
 
-growth models, stability analysis പോലുള്ള dynamic economic systems analyze ചെയ്യാൻ ഈ concepts അത്യന്താപേക്ഷിതമാണ്.
+###### Auction Mechanisms
 
-dominant eigenvalue കണ്ടെത്താൻ power iteration method ഉപയോഗിക്കാം:
+Securities transactions-ലെ prices-ഉം quantities-ഉം auction mechanisms നിർണ്ണയിക്കുന്നു.
 
-$$
-\lambda_1 = \lim_{k \to \infty} \frac{\|A^k \mathbf{v}_0\|}{\|A^{k-1} \mathbf{v}_0\|}
-$$
+###### Settlement Procedures
+
+Securities transactions സമയബന്ധിതമായും കൃത്യമായും പൂർത്തിയാകുന്നത് settlement procedures ഉറപ്പാക്കുന്നു.
+
+##### Reserve Requirements
+
+Banks നിർബന്ധമായും സൂക്ഷിക്കേണ്ട minimum reserves reserve requirements വ്യക്തമാക്കുന്നു, ഇത് അവയുടെ lending capacity-യെ ബാധിക്കുന്നു.
+
+## Fiscal Policy Coordination
+
+Fiscal policy-യിൽ ഗവൺമെന്റിന്റെ പല തലങ്ങൾ തമ്മിലുള്ള coordination ഉൾപ്പെടുന്നു.
+
+### National Budget Process
+
+National budget process-ൽ executive proposals, legislative approval, implementation oversight എന്നിവ ഉൾപ്പെടുന്നു.
+
+#### Revenue Collection
+
+Tax collection പല channels-ഇലൂടെയും government agencies-ഇലൂടെയും നടക്കുന്നു.
+
+##### Income Tax Administration
+
+Income tax systems-ന് വിശദമായ record-keeping-ഉം compliance monitoring-ഉം ആവശ്യമായിവരുന്നു.
+
+###### Audit Selection Criteria
+
+Risk assessment algorithms-ന്റെയും random sampling-ന്റെയും അടിസ്ഥാനത്തിലാണ് audits തിരഞ്ഞെടുക്കുന്നത്.
+
+###### Penalty Structures
+
+ന്യായമായ പിഴവുകൾക്കും disputes-ഇനും ഇടം നൽകിക്കൊണ്ടുതന്നെ, penalty structures non-compliance-നെ നിരുത്സാഹപ്പെടുത്തുന്നു.
+
+##### Corporate Tax Compliance
+
+Corporate taxation-ൽ multinational entities-ന് വേണ്ടിയുള്ള സങ്കീർണ്ണമായ നിയമങ്ങൾ ഉൾപ്പെടുന്നു.
+
+#### Expenditure Allocation
+
+Government spending വിവിധ programs-ഇലേക്കും departments-ഇലേക്കും allocate ചെയ്യപ്പെടുന്നു.
+
+### Intergovernmental Transfers
+
+Public services-ന് ആവശ്യമായ funding ഉറപ്പാക്കാൻ, ഗവൺമെന്റിന്റെ വിവിധ തലങ്ങൾ (federal, state, local) തമ്മിലുള്ള transfers സഹായിക്കുന്നു.
+
+## Summary
+
+ഈ hierarchical framework, global institutions മുതൽ specific implementation procedures വരെ, economic systems പല organizational levels-ൽ എങ്ങനെ പ്രവർത്തിക്കുന്നു എന്ന് കാണിക്കുന്നു. Policy effectiveness-ഉം institutional design-ഉം analyze ചെയ്യാൻ ഈ structures മനസ്സിലാക്കേണ്ടത് അത്യാവശ്യമാണ്.
