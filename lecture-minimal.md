@@ -8,24 +8,74 @@ kernelspec:
   language: python
   name: python3
 translation:
-  title: Introduction to Economics
+  title: Economic Theory Framework
   headings:
-    Supply and Demand: Supply and Demand
-    Economic Models: Economic Models
+    Microeconomics: Microeconomics
+    Macroeconomics: Macroeconomics
+    International Economics: International Economics
+    International Economics::Trade Theory: Trade Theory
+    International Economics::Exchange Rates: Exchange Rates
+    International Economics::International Finance: International Finance
+    Econometrics: Econometrics
+    Econometrics::Time Series Analysis: Time Series Analysis
+    Econometrics::Cross-Sectional Methods: Cross-Sectional Methods
+    Econometrics::Panel Data Techniques: Panel Data Techniques
+    Development Economics: Development Economics
+    Behavioral Economics: Behavioral Economics
+    Behavioral Economics::Cognitive Biases: Cognitive Biases
+    Behavioral Economics::Prospect Theory: Prospect Theory
+    Behavioral Economics::Applications: Applications
+    Conclusion: Conclusion
 ---
 
-# Introduction to Economics
+# Economic Theory Framework
 
-Economics-ന്റെ അടിസ്ഥാന തത്വങ്ങളിലേക്കുള്ള ഒരു പ്രാഥമിക ആമുഖമാണ് ഈ document നൽകുന്നത്. economic analysis-ന്റെ അടിത്തറ രൂപപ്പെടുത്തുന്ന അടിസ്ഥാന concepts-കൾ നമ്മൾ ഇവിടെ പരിശോധിക്കും.
+economic analysis-ക്കുള്ള ഒരു framework ആണ് ഈ document വിവരിക്കുന്നത്, ചില sections ഭാവിയിലെ content-ന് placeholder ആയി വർത്തിക്കുന്നു.
 
-## Supply and Demand
+## Microeconomics
 
-economics-ലെ ഏറ്റവും അടിസ്ഥാനപരമായ concepts-ആണ് supply-യും demand-ഉം. വ്യത്യസ്ത prices-ൽ producers എത്ര അളവ് sell ചെയ്യാൻ തയ്യാറാണെന്ന് supply curve കാണിക്കുന്നു, അതേസമയം consumers എത്ര അളവ് വാങ്ങാൻ തയ്യാറാണെന്ന് demand curve കാണിക്കുന്നു.
+Microeconomics-ൽ firms-ന്റെയും households-ന്റെയും തലത്തിലുള്ള individual decision-making-ഉം market interactions-ഉം പഠിക്കുന്നു.
 
-markets equilibrium-ൽ ആയിരിക്കുമ്പോൾ, supply ചെയ്യപ്പെടുന്ന quantity, demand ചെയ്യപ്പെടുന്ന quantity-ക്ക് തുല്യമായിരിക്കും. ഈ equilibrium price, buyers-ന്റെയും sellers-ന്റെയും താൽപ്പര്യങ്ങൾ സന്തുലിതമാക്കുന്നു.
+## Macroeconomics
 
-## Economic Models
+## International Economics
 
-economic processes-ന്റെ ലളിതമാക്കിയ പ്രതിനിധാനങ്ങളാണ് economic models. ഏറ്റവും പ്രധാനപ്പെട്ട relationships-ൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ചുകൊണ്ട് complex systems-നെ മനസ്സിലാക്കാൻ ഇവ economists-നെ സഹായിക്കുന്നു.
+International economics-ൽ cross-border trade, finance, policy coordination എന്നിവയെ പരിശോധിക്കുന്നു.
 
-reality-യെ ലളിതമാക്കാൻ models ചില assumptions ചെയ്യുന്നു. ഒരു model-ഉം perfect അല്ലെങ്കിലും, നല്ല models, economy എങ്ങനെ പ്രവർത്തിക്കുന്നു എന്നതിനെക്കുറിച്ച് വിലപ്പെട്ട insights നൽകുന്നു.
+### Trade Theory
+
+### Exchange Rates
+
+Exchange rate dynamics international competitiveness-നെയും capital flows-നെയും ബാധിക്കുന്നു.
+
+### International Finance
+
+## Econometrics
+
+Economic relationships-നെ estimate ചെയ്യാനും hypotheses-നെ test ചെയ്യാനുമുള്ള statistical methods.
+
+### Time Series Analysis
+
+### Cross-Sectional Methods
+
+ഒരു single time point-ൽ multiple entities-ൽ നിന്നുമുള്ള data-യെ Cross-sectional analysis പരിശോധിക്കുന്നു.
+
+### Panel Data Techniques
+
+## Development Economics
+
+## Behavioral Economics
+
+Behavioral economics, economic models-ൽ psychological insights ഉൾപ്പെടുത്തുന്നു, rational choice theory-യിൽ നിന്നുമുള്ള deviations വിശദീകരിക്കുന്നു.
+
+### Cognitive Biases
+
+### Prospect Theory
+
+Risk-ന് കീഴിൽ ആളുകൾ എങ്ങനെ തീരുമാനങ്ങൾ എടുക്കുന്നു എന്ന് Prospect theory വിവരിക്കുന്നു, gains-ഇനും losses-ഇനും ഉള്ള asymmetric responses ഇത് കാണിക്കുന്നു.
+
+### Applications
+
+## Conclusion
+
+Economic research-ഉം teaching-ഉം organize ചെയ്യാനുള്ള ഒരു structure ഈ framework provide ചെയ്യുന്നു. Empty ആയ sections ഭാവിയിലെ expansion-ന് സാധ്യതയുള്ള മേഖലകളെ സൂചിപ്പിക്കുന്നു.
