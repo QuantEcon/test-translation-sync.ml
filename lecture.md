@@ -193,7 +193,7 @@ $$
 Write a function `power_iterate(A, v0, k)` that returns the vector $A^k \mathbf{v}_0$ normalised to unit length.
 
 ```{hint}
-Use `np.linalg.norm` after each multiplication so the entries stay bounded.
+ഓരോ multiplication-നും ശേഷം `np.linalg.norm` ഉപയോഗിക്കുക, അപ്പോൾ entries bounded ആയി നിലനിൽക്കും.
 ```
 
 ```{exercise-end}
