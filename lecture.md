@@ -13,6 +13,7 @@ translation:
     Vector Spaces: Vector Spaces
     Vector Spaces::Basic Properties: Basic Properties
     Vector Spaces::Basic Properties::Applications in Economics: Applications in Economics
+    Vector Spaces::Basic Properties::Closure Property: Closure Property
     Matrix Operations: Matrix Operations
     Matrix Operations::Applications in Economics: Applications in Economics
     Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
@@ -68,6 +69,18 @@ vector spaces നിരവധി പ്രധാന properties satisfy ചെയ
 #### Applications in Economics
 
 economic modeling-ൽ vector space properties അടിസ്ഥാനപരമാണ്. closure property, feasible allocations-ന്റെ combinations feasible ആയി തുടരുന്നു എന്ന് ഉറപ്പാക്കുന്നു, inverses-ന്റെ നിലനിൽപ്പ് debts, obligations എന്നിവ model ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു.
+
+#### Closure Property
+
+economic applications-ന് closure property പ്രത്യേകിച്ചും പ്രധാനമാണ്. feasible consumption bundles-ഓ production plans-ഓ combine ചെയ്യുന്നത് മറ്റൊരു feasible outcome-ൽ കലാശിക്കുന്നു എന്ന് ഇത് ഉറപ്പാക്കുന്നു.
+
+Formally, ഏതെങ്കിലും vectors $\mathbf{u}, \mathbf{v} \in V$-ഇനും scalars $\alpha, \beta \in \mathbb{R}$-ഇനും:
+
+$$
+\alpha \mathbf{u} + \beta \mathbf{v} \in V
+$$
+
+points-ന്റെ convex combinations space-ൽ തന്നെ തുടരും എന്ന് ഈ property ഉറപ്പുനൽകുന്നു, economics-ലെ optimization problems-ന് ഇത് അത്യന്താപേക്ഷിതമാണ്.
 
 രണ്ട് vectors $\mathbf{u}$, $\mathbf{v}$ എന്നിവയുടെ sum component-wise ആയി define ചെയ്യുന്നു:
 
