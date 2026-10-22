@@ -29,7 +29,7 @@ vector space എന്നത് vectors എന്ന് വിളിക്കപ
 Mathematically, ഒരു vector $\mathbf{v} \in \mathbb{R}^n$ ഇങ്ങനെ represent ചെയ്യാം:
 
 $$
-\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}
+\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix} \in \mathbb{R}^n
 $$
 
 നമുക്ക് Python-ൽ ചില vectors സൃഷ്ടിച്ച് visualize ചെയ്യാം:
@@ -72,7 +72,7 @@ economic modeling-ൽ vector space properties അടിസ്ഥാനപരമ�
 രണ്ട് vectors $\mathbf{u}$, $\mathbf{v}$ എന്നിവയുടെ sum component-wise ആയി define ചെയ്യുന്നു:
 
 ```{math}
-\mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n \end{bmatrix}
+\mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n \end{bmatrix} \in \mathbb{R}^n
 ```
 
 ## Matrix Operations
@@ -87,7 +87,7 @@ a_{11} & a_{12} & \cdots & a_{1n} \\
 a_{21} & a_{22} & \cdots & a_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
 a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{bmatrix}
+\end{bmatrix} \in \mathbb{R}^{m \times n}
 $$
 
 Matrix multiplication, linear transformations compose ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു. matrices $A$, $B$ എന്നിവയ്ക്ക്, product $AB$, transformation $B$ apply ചെയ്തതിന് ശേഷം transformation $A$ apply ചെയ്യുന്നതിനെ represent ചെയ്യുന്നു.
@@ -134,7 +134,7 @@ Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ
 
 ```{math}
 :label: eigenvalue-equation
-Av = \lambda v
+A\mathbf{v} = \lambda \mathbf{v}, \quad \mathbf{v} \neq \mathbf{0}
 ```
 
 ഇവിടെ $\lambda$ എന്നത് eigenvalue ആണ്. growth theory മുതൽ stability analysis വരെ, economics-ൽ ഉടനീളം ഈ fundamental equation കാണപ്പെടുന്നു.
@@ -142,7 +142,7 @@ Av = \lambda v
 ഒരു $n \times n$ matrix $A$-ക്ക്, characteristic polynomial ഇതാണ്:
 
 $$
-\det(A - \lambda I) = 0
+\det(A - \lambda I) = 0, \quad \lambda \in \mathbb{C}
 $$
 
 ഈ equation പരിഹരിക്കുന്നത് eigenvalues നൽകുന്നു. നമുക്ക് ഒരു transition matrix-ന്റെ eigenvalues കണക്കാക്കാം:
@@ -180,5 +180,5 @@ growth models, stability analysis പോലുള്ള dynamic economic systems
 dominant eigenvalue കണ്ടെത്താൻ power iteration method ഉപയോഗിക്കാം:
 
 $$
-\lambda_1 = \lim_{k \to \infty} \frac{\|A^k \mathbf{v}_0\|}{\|A^{k-1} \mathbf{v}_0\|}
+\lambda_1 = \lim_{k \to \infty} \frac{\|A^k \mathbf{v}_0\|}{\|A^{k-1} \mathbf{v}_0\|}, \quad \mathbf{v}_0 \neq \mathbf{0}
 $$
