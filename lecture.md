@@ -13,8 +13,6 @@ translation:
     Vector Spaces: Vector Spaces
     Vector Spaces::Basic Properties: Basic Properties
     Vector Spaces::Basic Properties::Applications in Economics: Applications in Economics
-    Matrix Operations: Matrix Operations
-    Matrix Operations::Applications in Economics: Applications in Economics
     Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
 ---
 
@@ -74,59 +72,6 @@ economic modeling-ൽ vector space properties അടിസ്ഥാനപരമ�
 ```{math}
 \mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n \end{bmatrix}
 ```
-
-## Matrix Operations
-
-Matrices എന്നത് linear transformations represent ചെയ്യുന്ന numbers-ന്റെ rectangular arrays ആണ്. economic modeling, data analysis എന്നിവയിൽ ഇവ അടിസ്ഥാന tools ആണ്.
-
-ഒരു general $m \times n$ matrix-ന്റെ രൂപം ഇങ്ങനെയാണ്:
-
-$$
-A = \begin{bmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \\
-a_{21} & a_{22} & \cdots & a_{2n} \\
-\vdots & \vdots & \ddots & \vdots \\
-a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{bmatrix}
-$$
-
-Matrix multiplication, linear transformations compose ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു. matrices $A$, $B$ എന്നിവയ്ക്ക്, product $AB$, transformation $B$ apply ചെയ്തതിന് ശേഷം transformation $A$ apply ചെയ്യുന്നതിനെ represent ചെയ്യുന്നു.
-
-നമുക്ക് ഒരു economic application ഉപയോഗിച്ച് matrix operations demonstrate ചെയ്യാം:
-
-```{code-cell} python
-# 3-sector economy-ക്ക് വേണ്ടി ഒരു simple input-output matrix സൃഷ്ടിക്കുക
-# Sectors: Agriculture, Manufacturing, Services
-input_output = np.array([
-    [0.2, 0.3, 0.1],  # Agriculture inputs
-    [0.3, 0.2, 0.2],  # Manufacturing inputs
-    [0.1, 0.2, 0.3]   # Services inputs
-])
-
-# Final demand vector (billions-ൽ)
-final_demand = np.array([100, 150, 200])
-
-# Leontief inverse ഉപയോഗിച്ച് total output കണക്കാക്കുക: x = (I - A)^{-1} * d
-I = np.eye(3)
-leontief_inverse = np.linalg.inv(I - input_output)
-total_output = leontief_inverse @ final_demand
-
-print("Input-Output Matrix:")
-print(input_output)
-print("\nLeontief Inverse:")
-print(np.round(leontief_inverse, 3))
-print("\nആവശ്യമായ Total Output (billions):")
-print(np.round(total_output, 2))
-```
-
-### Applications in Economics
-
-economic models പലപ്പോഴും matrices ഉപയോഗിക്കുന്നത് ഇവ represent ചെയ്യാനാണ്:
-- production-ലെ input-output relationships
-- Markov chains-ലെ transition probabilities
-- linear equation systems-ലെ coefficient matrices
-
-Leontief inverse $(I - A)^{-1}$ പ്രത്യേകിച്ചും പ്രധാനമാണ്, ഇവിടെ $I$ identity matrix ആണ്, $A$ input-output coefficient matrix ആണ്.
 
 ## Eigenvalues and Eigenvectors
 
