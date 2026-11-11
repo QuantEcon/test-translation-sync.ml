@@ -8,13 +8,13 @@ kernelspec:
   language: python
   name: python3
 translation:
-  title: Introduction to Economics
+  title: Principles of Economic Analysis
   headings:
     Supply and Demand: Supply and Demand
     Economic Models: Economic Models
 ---
 
-# Introduction to Economics
+# Principles of Economic Analysis
 
 Economics-ന്റെ അടിസ്ഥാന തത്വങ്ങളിലേക്കുള്ള ഒരു പ്രാഥമിക ആമുഖമാണ് ഈ document നൽകുന്നത്. economic analysis-ന്റെ അടിത്തറ രൂപപ്പെടുത്തുന്ന അടിസ്ഥാന concepts-കൾ നമ്മൾ ഇവിടെ പരിശോധിക്കും.
 
