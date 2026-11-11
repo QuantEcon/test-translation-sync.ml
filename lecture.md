@@ -10,12 +10,12 @@ kernelspec:
 translation:
   title: Linear Algebra Foundations
   headings:
-    Vector Spaces: Vector Spaces
-    Vector Spaces::Basic Properties: Basic Properties
-    Vector Spaces::Basic Properties::Applications in Economics: Applications in Economics
-    Matrix Operations: Matrix Operations
-    Matrix Operations::Applications in Economics: Applications in Economics
-    Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
+    Vector spaces: Vector Spaces
+    Vector spaces::Basic properties: Basic properties
+    Vector spaces::Basic properties::Applications in economics: Applications in economics
+    Matrix operations: Matrix Operations
+    Matrix operations::Applications in economics: Applications in economics
+    Eigenvalues and eigenvectors: Eigenvalues and Eigenvectors
 ---
 
 # Linear Algebra Foundations
@@ -56,7 +56,7 @@ ax.grid(True)
 plt.show()
 ```
 
-### Basic Properties
+### Basic properties
 
 vector spaces നിരവധി പ്രധാന properties satisfy ചെയ്യുന്നു:
 - addition, scalar multiplication എന്നിവയ്ക്ക് കീഴിലുള്ള closure
@@ -65,7 +65,7 @@ vector spaces നിരവധി പ്രധാന properties satisfy ചെയ
 
 ഈ properties, mathematical operations-ന് കീഴിൽ vector spaces പ്രവചനീയമായി പെരുമാറുന്നു എന്ന് ഉറപ്പാക്കുന്നു.
 
-#### Applications in Economics
+#### Applications in economics
 
 economic modeling-ൽ vector space properties അടിസ്ഥാനപരമാണ്. closure property, feasible allocations-ന്റെ combinations feasible ആയി തുടരുന്നു എന്ന് ഉറപ്പാക്കുന്നു, inverses-ന്റെ നിലനിൽപ്പ് debts, obligations എന്നിവ model ചെയ്യാൻ നമ്മെ അനുവദിക്കുന്നു.
 
@@ -119,7 +119,7 @@ print("\nആവശ്യമായ Total Output (billions):")
 print(np.round(total_output, 2))
 ```
 
-### Applications in Economics
+### Applications in economics
 
 economic models പലപ്പോഴും matrices ഉപയോഗിക്കുന്നത് ഇവ represent ചെയ്യാനാണ്:
 - production-ലെ input-output relationships
@@ -137,7 +137,7 @@ Eigenvalues, eigenvectors എന്നിവ linear transformations-ന്റെ
 Av = \lambda v
 ```
 
-ഇവിടെ $\lambda$ എന്നത് eigenvalue ആണ്. growth theory മുതൽ stability analysis വരെ, economics-ൽ ഉടനീളം ഈ fundamental equation കാണപ്പെടുന്നു.
+ഇവിടെ $\lambda$ എന്നത് eigenvalue ആണ്. growth theory മുതൽ dynamic systems-ന്റെ stability analysis വരെ, economics-ൽ ഉടനീളം ഈ fundamental equation കാണപ്പെടുന്നു.
 
 ഒരു $n \times n$ matrix $A$-ക്ക്, characteristic polynomial ഇതാണ്:
 
