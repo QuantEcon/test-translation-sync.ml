@@ -16,6 +16,7 @@ translation:
     Matrix Operations: Matrix Operations
     Matrix Operations::Applications in Economics: Applications in Economics
     Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors
+    Exercises: Exercises
 ---
 
 # Linear Algebra Foundations
@@ -182,3 +183,36 @@ dominant eigenvalue കണ്ടെത്താൻ power iteration method ഉപ
 $$
 \lambda_1 = \lim_{k \to \infty} \frac{\|A^k \mathbf{v}_0\|}{\|A^{k-1} \mathbf{v}_0\|}
 $$
+
+## Exercises
+
+```{exercise-start}
+:label: la_ex1
+```
+
+Write a function `power_iterate(A, v0, k)` that returns the vector $A^k \mathbf{v}_0$ normalised to unit length.
+
+```{hint}
+Use `np.linalg.norm` after each multiplication so the entries stay bounded.
+```
+
+```{exercise-end}
+```
+
+```{solution-start} la_ex1
+:class: dropdown
+```
+
+Here's one solution:
+
+```{code-cell} python3
+def power_iterate(A, v0, k):
+    v = np.asarray(v0, dtype=float)
+    for _ in range(k):
+        v = A @ v
+        v = v / np.linalg.norm(v)
+    return v
+```
+
+```{solution-end}
+```
