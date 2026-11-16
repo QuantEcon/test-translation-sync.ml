@@ -38,11 +38,11 @@ $$
 import numpy as np
 import matplotlib.pyplot as plt
 
-# രണ്ട് vectors സൃഷ്ടിക്കുക
+# Create two example vectors for demonstration
 v1 = np.array([2, 3])
 v2 = np.array([1, 4])
 
-# Vectors visualize ചെയ്യുക
+# Create vector visualization
 fig, ax = plt.subplots(figsize=(8, 6))
 ax.quiver(0, 0, v1[0], v1[1], angles='xy', scale_units='xy', scale=1, color='blue', label='v1')
 ax.quiver(0, 0, v2[0], v2[1], angles='xy', scale_units='xy', scale=1, color='red', label='v2')
@@ -50,7 +50,7 @@ ax.set_xlim(-1, 5)
 ax.set_ylim(-1, 5)
 ax.set_xlabel('x-axis')
 ax.set_ylabel('y-axis')
-ax.set_title('2D Space-ലെ Vector Representation')
+ax.set_title('Vector Visualization in 2D Euclidean Space')
 ax.legend()
 ax.grid(True)
 plt.show()
@@ -113,7 +113,7 @@ total_output = leontief_inverse @ final_demand
 
 print("Input-Output Matrix:")
 print(input_output)
-print("\nLeontief Inverse:")
+print("\nLeontief Inverse Matrix:")
 print(np.round(leontief_inverse, 3))
 print("\nആവശ്യമായ Total Output (billions):")
 print(np.round(total_output, 2))
